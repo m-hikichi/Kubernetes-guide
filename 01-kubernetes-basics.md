@@ -245,3 +245,20 @@ kubectl get pods -w
 ```bash
 kind delete cluster --name my-cluster
 ```
+
+---
+
+### 6\. 次のステップへ
+
+このドキュメントでは、Kubernetesの本当に基本的な部分を学びました。しかし、Kubernetesの力はこんなものではありません。
+
+ここまでの内容をマスターしたら、次はより実践的な`kubectl`コマンドを学ぶことで、Kubernetesをさらに深く理解し、自由自在に扱えるようになります。
+
+以下のドキュメントに進んで、スキルアップを目指しましょう！
+
+*   **[02-observing-resources.md](./02-observing-resources.md)**
+    *   クラスタの状態を様々な角度から**確認する**ためのコマンド (`get`, `describe`, `logs`) を学びます。トラブルシューティングの第一歩です。
+*   **[03-interacting-and-debugging.md](./03-interacting-and-debugging.md)**
+    *   動いているコンテナの**中に入ったり**、アプリケーションに**直接アクセス**したりして、問題を調査・デバッグする方法 (`exec`, `port-forward`, `run`, `debug`) を学びます。
+*   **[04-managing-resources.md](./04-managing-resources.md)**
+    *   リソースを**変更・削除**するための、よりパワフルなコマンド (`edit`, `delete`) を学びます。
