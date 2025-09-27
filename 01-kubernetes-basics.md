@@ -263,15 +263,15 @@ kind delete cluster --name my-cluster
 
 このドキュメントでは、Kubernetesの本当に基本的な部分を学びました。しかし、Kubernetesの力はこんなものではありません。
 
-ここまでの内容をマスターしたら、次はより実践的な`kubectl`コマンドを学ぶことで、Kubernetesをさらに深く理解し、自由自在に扱えるようになります。
+ここまでの内容をマスターしたら、次はより実践的な`kubectl`コマンドや`Deployment`リソースについて学ぶことで、Kubernetesをさらに深く理解し、自由自在に扱えるようになります。
 
 以下のドキュメントに進んで、スキルアップを目指しましょう！
 
-*   **[02-observing-resources.md](./02-observing-resources.md)**
-    *   クラスタの状態を様々な角度から**確認する**ためのコマンド (`get`, `describe`, `logs`) を学びます。トラブルシューティングの第一歩です。
-*   **[03-interacting-and-debugging.md](./03-interacting-and-debugging.md)**
-    *   動いているコンテナの**中に入ったり**、アプリケーションに**直接アクセス**したりして、問題を調査・デバッグする方法 (`exec`, `port-forward`, `run`, `debug`) を学びます。
-*   **[04-managing-resources.md](./04-managing-resources.md)**
-    *   リソースを**変更・削除**するための、よりパワフルなコマンド (`edit`, `delete`) を学びます。
-*   **[05-deployment-strategies.md](./05-deployment-strategies.md)**
-    *   アプリケーションを**ダウンタイムなしで安全に更新**するための、より高度なデプロイ戦略 (`RollingUpdate`など) と関連コマンド (`kubectl rollout`) を学びます。
+*   **第2章: kubectlコマンドの習得**
+    *   **[2.1. 基本的なコマンド](./02.1-kubectl-basic-commands.md)**
+        *   リソースの参照・編集・削除といった、日常的に使う基本的な操作 (`get`, `describe`, `edit`, `delete`) を学びます。
+    *   **[2.2. 応用的なコマンド](./02.2-kubectl-advanced-commands.md)**
+        *   ログの確認やコンテナへのアクセスなど、アプリケーションの調査やデバッグで役立つ応用的な操作 (`logs`, `exec`, `port-forward`など) を学びます。
+*   **第3章: Deployment詳解**
+    *   **[3.1. 高度なデプロイ戦略](./03-deployment-deep-dive.md)**
+        *   アプリケーションをダウンタイムなしで安全に更新するための、より高度なデプロイ戦略 (`RollingUpdate`など) と関連コマンド (`kubectl rollout`) を学びます。
