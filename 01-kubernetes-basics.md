@@ -275,3 +275,6 @@ kind delete cluster --name my-cluster
 *   **第3章: Deployment詳解**
     *   **[3.1. 高度なデプロイ戦略](./03-deployment-deep-dive.md)**
         *   アプリケーションをダウンタイムなしで安全に更新するための、より高度なデプロイ戦略 (`RollingUpdate`など) と関連コマンド (`kubectl rollout`) を学びます。
+*   **第4章: Service詳解**
+    *   **[4.1. Serviceの仕組みと使い方](./04-service-deep-dive.md)**
+        *   Podに安定したアクセスを提供するためのServiceの仕組み、種類（ClusterIP, NodePortなど）、DNSとの連携について深く学びます。
