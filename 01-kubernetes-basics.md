@@ -263,20 +263,32 @@ kind delete cluster --name my-cluster
 
 このドキュメントでは、Kubernetesの本当に基本的な部分を学びました。しかし、Kubernetesの力はこんなものではありません。
 
-ここまでの内容をマスターしたら、次はより実践的な`kubectl`コマンドや`Deployment`リソースについて学ぶことで、Kubernetesをさらに深く理解し、自由自在に扱えるようになります。
+ここまでの内容をマスターしたら、次は以下のドキュメントに進んで、Kubernetesをさらに深く、体系的に学んでいきましょう。
 
-以下のドキュメントに進んで、スキルアップを目指しましょう！
-
-*   **第2章: kubectlコマンドの習得**
+*   **第2章: `kubectl`コマンドの習得**
     *   **[2.1. 基本的なコマンド](./02.1-kubectl-basic-commands.md)**
         *   リソースの参照・編集・削除といった、日常的に使う基本的な操作 (`get`, `describe`, `edit`, `delete`) を学びます。
     *   **[2.2. 応用的なコマンド](./02.2-kubectl-advanced-commands.md)**
         *   ログの確認やコンテナへのアクセスなど、アプリケーションの調査やデバッグで役立つ応用的な操作 (`logs`, `exec`, `port-forward`など) を学びます。
-*   **第3章: Deployment詳解**
-    *   **[3.1. 高度なデプロイ戦略](./03.1-deployment-deep-dive.md)**
-        *   アプリケーションをダウンタイムなしで安全に更新するための、より高度なデプロイ戦略 (`RollingUpdate`など) と関連コマンド (`kubectl rollout`) を学びます。
-    *   **[3.2. ConfigMap: 設定情報の管理](./03.2-configmap.md)**
-        *   アプリケーションの設定情報をコードと分離して管理するためのConfigMapの仕組みと使い方を学びます。
-*   **第4章: Service詳解**
-    *   **[4.1. Serviceの仕組みと使い方](./04-service-deep-dive.md)**
-        *   Podに安定したアクセスを提供するためのServiceの仕組み、種類（ClusterIP, NodePortなど）、DNSとの連携について深く学びます。
+
+*   **第3章: アプリケーションのデプロイ【基本編】**
+    *   **[3.1. Deployment詳解](./03.1-deployment-deep-dive.md)**
+        *   アプリケーションをデプロイし、レプリカ数を管理する最も基本的な方法を学びます。
+    *   **[3.2. Service詳解](./03.2-service-deep-dive.md)**
+        *   デプロイしたアプリケーションに外部からアクセスするための窓口となるServiceを学びます。
+    *   **[3.3. Health Checks](./03.3-health-checks.md)**
+        *   アプリケーションを安定稼働させるための自己修復の仕組み（Liveness/Readiness Probe）を学びます。
+
+*   **第4章: アプリケーションの設定と管理**
+    *   **[4.1. ConfigMap](./04.1-configmap.md)**
+        *   設定情報をコンテナから分離して管理する方法を学びます。
+    *   **[4.2. Secret](./04.2-secret.md)**
+        *   パスワードなどの機密情報を安全に管理する方法を学びます。
+    *   **[4.3. リソース管理 (Requests/Limits)](./04.3-resource-management.md)**
+        *   コンテナが使用するCPUやメモリを適切に設定し、リソースを効率的に使う方法を学びます。
+
+*   **第5章: アプリケーションのデプロイ【応用編】**
+    *   **[5.1. 高度なスケジューリング](./05.1-advanced-scheduling.md)**
+        *   特定のノードにPodを配置するなど、Podの配置を細かく制御する方法（Affinity, Taintsなど）を学びます。
+    *   **[5.2. JobsとCronJobs](./05.2-jobs-and-cronjobs.md)**
+        *   一時的なタスクや定期的なバッチ処理を実行する方法を学びます。
